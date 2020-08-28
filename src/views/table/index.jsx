@@ -159,10 +159,11 @@ class TableComponent extends Component {
           <Panel header="筛选" key="1">
             <Form layout="inline">
               <Form.Item label="标题:">
-                <Input onChange={this.filterTitleChange} />
+                <Input allowClear onChange={this.filterTitleChange} />
               </Form.Item>
               <Form.Item label="类型:">
                 <Select
+                  allowClear
                   style={{ width: 120 }}
                   onChange={this.filterStatusChange}>
                   <Select.Option value="published">published</Select.Option>
@@ -171,6 +172,7 @@ class TableComponent extends Component {
               </Form.Item>
               <Form.Item label="推荐指数:">
                 <Select
+                  allowClear
                   style={{ width: 120 }}
                   onChange={this.filterStarChange}>
                   <Select.Option value={1}>★</Select.Option>
