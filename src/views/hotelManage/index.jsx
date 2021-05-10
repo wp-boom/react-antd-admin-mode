@@ -174,7 +174,7 @@ export default class HotelManage extends Component{
           expandable={{expandedRowRender}} // 做展开行数据处理
           expandedRowKeys={this.state.expandedRowKeys} 
           expandedRowRender={expandedRowRender} 
-          onExpand={this.changeRowsKey(expanded, record)} //点击展开赋值rowsKey
+          onExpand={(expanded, record) => this.changeRowsKey(expanded, record)} //点击展开赋值rowsKey
           onExpandedRowsChange={this.onExpandedRowsChange}
           columns={this.columns}
         />
