@@ -159,7 +159,7 @@ class TableComponent extends Component {
           <Panel header="筛选" key="1">
             <Form layout="inline">
               <Form.Item label="标题:">
-                <Input allowClear onChange={this.filterTitleChange} />
+                <Input size="small" allowClear onChange={this.filterTitleChange} />
               </Form.Item>
               <Form.Item label="类型:">
                 <Select

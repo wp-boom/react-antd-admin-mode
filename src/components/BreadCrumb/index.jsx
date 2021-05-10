@@ -39,6 +39,7 @@ const BreadCrumb = (props) => {
   const { location } = props;
   const { pathname } = location;
   let path = getPath(menuList, pathname);
+  console.info(path)
   const first = path && path[0];
   if (first && first.title.trim() !== "首页") {
     path = [{ title: "首页", path: "/dashboard" }].concat(path);

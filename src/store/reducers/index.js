@@ -4,11 +4,13 @@ import app from "./app";
 import settings from "./settings";
 import tagsView from "./tagsView";
 import monitor from "./monitor";
+import hotelSetting from './hotelSetting'
 
 export default combineReducers({
   user,
   app,
   settings,
   tagsView,
-  monitor
+  monitor,
+  hotelSetting
 });

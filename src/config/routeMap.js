@@ -16,6 +16,7 @@ const MixChart = Loadable({loader: () => import(/*webpackChunkName:'MixChart'*/'
 const Menu1_1 = Loadable({loader: () => import(/*webpackChunkName:'Menu1_1'*/'@/views/nested/menu1/menu1-1'),loading: Loading});
 const Menu1_2_1 = Loadable({loader: () => import(/*webpackChunkName:'Menu1_2_1'*/'@/views/nested/menu1/menu1-2/menu1-2-1'),loading: Loading});
 const Table = Loadable({loader: () => import(/*webpackChunkName:'Table'*/'@/views/table'),loading: Loading});
+const HotelManage = Loadable({loader: () => import(/*webpackChunkName:'Table'*/'@/views/hotelManage'),loading: Loading});
 const ExportExcel = Loadable({loader: () => import(/*webpackChunkName:'ExportExcel'*/'@/views/excel/exportExcel'),loading: Loading});
 const UploadExcel = Loadable({ loader: () => import(/*webpackChunkName:'UploadExcel'*/'@/views/excel/uploadExcel'),loading: Loading });
 const Zip = Loadable({loader: () => import(/*webpackChunkName:'Zip'*/'@/views/zip'),loading: Loading});
@@ -42,6 +43,7 @@ export default [
   { path: "/nested/menu1/menu1-1", component: Menu1_1, roles: ["admin","editor"] },
   { path: "/nested/menu1/menu1-2/menu1-2-1", component: Menu1_2_1, roles: ["admin","editor"] },
   { path: "/table", component: Table, roles: ["admin","editor"] },
+  { path: "/hotelManage", component: HotelManage, roles: ["admin","editor"] },
   { path: "/excel/export", component: ExportExcel, roles: ["admin","editor"] },
   { path: "/excel/upload", component: UploadExcel, roles: ["admin","editor"] },
   { path: "/zip", component: Zip, roles: ["admin","editor"] },

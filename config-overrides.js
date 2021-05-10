@@ -3,7 +3,9 @@ const {
   fixBabelImports,
   addLessLoader,
   addWebpackAlias,
+  addWebpackPlugin
 } = require("customize-cra");
+const ProgressBarPlugin = require("progress-bar-webpack-plugin")
 const path = require("path");
 function resolve(dir) {
   return path.join(__dirname, dir);
@@ -39,5 +41,6 @@ module.exports = override(
   addWebpackAlias({
     "@": resolve("src"),
   }),
-  addCustomize()
+  addCustomize(),
+  addWebpackPlugin(new ProgressBarPlugin())
 );

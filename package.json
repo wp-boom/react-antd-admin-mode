@@ -1,5 +1,5 @@
 {
-  "name": "react_antd_admin_template",
+  "name": "hotel-react",
   "version": "1.0.0",
   "author": "NLRX <414961362@qq.com>",
   "license": "MIT",
@@ -65,13 +65,14 @@
     ]
   },
   "devDependencies": {
-    "user-agent": "^1.0.4",
     "babel-plugin-import": "^1.13.0",
     "commitizen": "^4.0.3",
     "customize-cra": "^0.9.1",
     "cz-conventional-changelog": "^3.0.2",
     "mockjs": "^1.1.0",
-    "react-app-rewired": "^2.1.5"
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "react-app-rewired": "^2.1.5",
+    "user-agent": "^1.0.4"
   },
   "config": {
     "commitizen": {
